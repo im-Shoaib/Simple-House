@@ -39,11 +39,11 @@ body, html {
 }
 
 .sec1-logo-square {
-  width: 25px;
-  height: 25px;
-  border: 1px solid white;
-  margin-right: 10px;
   flex-shrink: 0;
+}
+
+.sec1-logo-square img{
+    width: 80%;
 }
 
 .sec1-logo-box {
@@ -109,12 +109,6 @@ body, html {
     }
   .sec1-overlay {
     padding: 15px 20px;
-  }
-
-  .sec1-logo-square {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
   }
 
   .sec1-title {
@@ -619,3 +613,4 @@ body, html {
   }
 
 }
+
