@@ -23,7 +23,6 @@ body, html {
 .sec1-overlay {
   width: 100%;
   padding: 20px 30px;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .sec1-container {
@@ -613,4 +612,5 @@ body, html {
   }
 
 }
+
 
