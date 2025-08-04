@@ -11,7 +11,7 @@ body, html {
 
 .sec1-hero-section {
   position: relative;
-  background-image: url('assets/simple-house-01.jpg');
+  background-image: url('simple-house-01.jpg');
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -276,7 +276,7 @@ body, html {
 /* section 3 end  */
 
 .sec4-img{
-    background: url(assets/about-05.jpg);
+    background: url(about-05.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
@@ -286,7 +286,7 @@ body, html {
 
 @media (max-width: 768px){
     .sec4-img{
-    background: url(assets/about-05.jpg);
+    background: url(about-05.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 11vh;
@@ -520,7 +520,7 @@ body, html {
     /* section 7 end  */
 
     .sec8-img{
-    background: url(assets/pizza.jpg);
+    background: url(pizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
@@ -530,7 +530,7 @@ body, html {
 
      @media (max-width: 768px) {
          .sec8-img{
-    background: url(assets/pizza.jpg);
+    background: url(pizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 25vh;
@@ -617,4 +617,5 @@ body, html {
     font-size: 14px;
     padding: 12px 16px;
   }
+
 }
