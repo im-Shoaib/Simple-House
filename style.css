@@ -284,27 +284,55 @@ body, html {
 
 /* section 3 end  */
 
-.sec4-img{
-    background: url(about-05.jpg);
+.sec4-img {
+    background: url(about-05.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 40vh;
-    max-width: 1100px;
-    margin: 0px auto;
+    margin: 0 auto;
+    width: 100%; /* Make it responsive */
+    max-width: 1100px; /* Limit max size on desktop */
+    position: relative;
+    z-index: 1;
 }
 
-@media (max-width: 768px){
-    .sec4-img{
-    background: url(about-05.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 11vh;
-    max-width: 1200px;
-    width: 95%;
-    margin: 0px auto;
-}
+.sec4-img::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* Optional: Add a dark overlay */
+    /* background: rgba(0, 0, 0, 0.3); */
 }
 
+.sec4-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .sec4-img {
+        background-attachment: scroll; /* disables parallax on mobile */
+        height: 23vh;
+        background-size: cover;
+        width: 100%; /* Ensure responsiveness */
+        max-width: 100%;
+    }
+
+    .sec4-content {
+        padding-top: 15vh;
+        font-size: 1.2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 /* section 4 end  */
 
  .sec5-section {
@@ -819,6 +847,7 @@ body, html {
     color: #666;
     margin-top: 40px;
   }
+
 
 
 
